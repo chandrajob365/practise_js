@@ -1,0 +1,31 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+}
+
+.child {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+}
+
+.indicator {
+	background-color: blue;
+	height: 100%;
+	flex-basis: 1%;
+}
+
+.content {
+	flex-basis: 98%;
+	font-style: italic;
+}
+
+.seprator {
+	height: 1px;
+	width: 100%;
+	transform: scaleY(-1);
+	background-color: #dddee3;
+}

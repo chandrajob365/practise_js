@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script type="text/javascript" src="script.js"></script>
+		<title>Debouncing</title>
+		<style>
+			#div-body {
+				border: 1px solid black;
+				width: 800px;
+				height: 500px;
+				overflow: scroll;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div-body">
+			<p style="background-color: red; height: 700px">This is line 1</p>
+			<p style="background-color: blue; height: 700px">This is line 2</p>
+			<p style="background-color: green; height: 700px">This is line 3</p>
+			<p style="background-color: yellow; height: 700px">This is line 4</p>
+		</div>
+		<p>Number of times event fired</p>
+		<div id="show-event-fired-count"></div>
+		<p>Number of times api is called</p>
+		<div id="debounce-count"></div>
+		<br /><br />
+		<div id="div-input">
+			<input type="text" id="inputBox" /> &nbsp;&nbsp;&nbsp; Event Fired count
+			:: <span id="input-event-fired-count"></span>&nbsp; &nbsp; &nbsp;
+			Debounced Api called count :: <span id="search-api-called-count"></span>
+		</div>
+	</body>
+</html>

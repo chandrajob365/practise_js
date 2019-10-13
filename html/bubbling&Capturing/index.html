@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script type="text/javascript" src="script.js"></script>
+		<title>Bubbling_Capturing</title>
+	</head>
+	<style>
+		div {
+			min-width: 100px;
+			min-width: 100px;
+			padding: 30px;
+		}
+		#grandparent {
+			background: blue;
+			border: 1px solid blue;
+		}
+		#parent {
+			background: green;
+			border: 1px solid green;
+		}
+		#child {
+			background: red;
+			border: 1px solid red;
+		}
+	</style>
+	<body>
+		<div id="grandparent">
+			<div id="parent">
+				<div id="child"></div>
+			</div>
+		</div>
+	</body>
+</html>
